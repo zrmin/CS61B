@@ -4,6 +4,7 @@
 
 1. `sudo apt-get update`
 2. `sudo apt-get install default-jdk`
+   * 在CS61B环境配置中，我安装的jdk版本不是这个版本
 3. `javac --version`
    * 我的返回`11.0.18`
 

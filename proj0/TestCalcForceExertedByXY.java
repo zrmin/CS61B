@@ -35,7 +35,7 @@ public class TestCalcForceExertedByXY {
             System.out.println("PASS: " + label + ": Expected " + expected + " and you gave " + actual);
         } else {
             System.out.println("FAIL: " + label + ": Expected " + expected + " and you gave " + actual);
-            if (approxEqual(actual, expected, eps)) {
+          if (approxEqual(actual, expected, eps)) {
                 System.out.println("      Hint: Your answer is exactly opposite of the correct answer.");
             }
         }

@@ -16,7 +16,7 @@ public class Planet {
 	public double mass; // Its mass
 	public String imgFileName; // The name of the file that corresponds to the image that depicts the body
 
-	public final double G = 6.67 * 1e-11;
+	private final double G = 6.67 * 1e-11;
 
 	/**
 	 * Constructor1
@@ -113,8 +113,9 @@ public class Planet {
 		
 		for (int i = 0; i < allPlanets.length; ++i) {
 			if (this.xxPos == allPlanets[i].xxPos && this.yyPos == allPlanets[i].yyPos && this.xxVel == allPlanets[i].xxVel && this.yyVel == allPlanets[i].yyVel && this.mass == allPlanets[i].mass) continue;
-			else Fy += allPlanets[i].calcForceExertedByY(this);
+			else Fy += this.calcForceExertedByY(allPlanets[i]);
 		}
+
 		return Fy;
 	}
 
